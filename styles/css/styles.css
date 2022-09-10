@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  color: var(--negro);
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 50rem;
+}
+.container__divider {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: 0.5rem double #B08B56;
+  color: #B08B56;
+  text-align: center;
+  width: 100%;
+}
+.container__divider:after {
+  content: "§";
+  font-family: "Aboreto", cursive;
+  color: #B08B56;
+  display: inline-block;
+  position: relative;
+  top: -1rem;
+  font-size: 2em;
+  padding: 0 0.25em;
+  background: ghostwhite;
+}
+.container__title {
+  font-family: "Aboreto", cursive;
+  margin: 2rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #B08B56;
+}
+.container__search {
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem auto;
+  width: 80%;
+  align-content: center;
+  border-bottom: 0.2rem solid #B08B56;
+  box-shadow: none;
+  padding: 0.5rem 0rem 0.5rem 2.5rem;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  transition: border-bottom 0.2s ease-in-out;
+}
+.container__search:focus {
+  outline: none;
+  border-bottom: 0.5rem solid #B08B56;
+}
+.container__spells {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.container__spells__spell {
+  border-bottom: solid 0.1rem #B08B56;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, border-bottom 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+}
+.container__spells__spell-hidden {
+  display: none;
+}
+.container__spells__spell:hover {
+  background-color: rgba(128, 128, 128, 0.09);
+  border-bottom: solid 0.3rem #B08B56;
+}
+
+.card {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 80vw;
+  max-width: 50rem;
+}
+.card__separator {
+  margin: 0.5rem 0rem;
+  border: 1px solid #B08B56;
+}
+.card__separator-empty {
+  height: 0.5rem;
+}
+.card__spell {
+  font-family: "Aboreto", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 0.25rem solid #B08B56;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.card__text {
+  font-family: "Montserrat", sans-serif;
+  margin: 0.25rem 0rem;
+}
+.card__text-bold {
+  font-weight: 700;
+}
+.card__text-italic {
+  margin-top: 0.25rem;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+body {
+  background-color: ghostwhite;
+}/*# sourceMappingURL=styles.css.map */

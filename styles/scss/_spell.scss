@@ -1,0 +1,46 @@
+.card{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 80vw;
+    max-width: 50rem;
+
+    &__separator{
+        margin: 0.5rem 0rem;
+        border: 1px solid #B08B56;
+        &-empty{
+            height: 0.5rem;
+        }
+    }
+
+
+    &__spell{
+        font-family: 'Aboreto', cursive;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: left;
+        text-transform: uppercase;
+        border-bottom: 0.25rem solid #B08B56;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__text{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0.25rem 0rem;
+
+        &-bold{
+            font-weight: 700;
+        }
+
+        &-italic{
+            margin-top: 0.25rem;
+            font-style: italic;
+            text-transform: lowercase;
+        }
+    }
+
+
+}

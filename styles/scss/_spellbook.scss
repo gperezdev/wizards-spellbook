@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200;300;400;700&display=swap');
+
+.container{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    max-width: 50rem;
+
+    &__divider{
+        overflow: visible; /* For IE */
+        padding: 0;
+        border: none;
+        border-top: 0.5rem double #B08B56;
+        color: #B08B56;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__divider:after{
+            content: "§";
+            font-family: 'Aboreto', cursive;
+            color: #B08B56;
+            display: inline-block;
+            position: relative;
+            top: -1rem;
+            font-size: 2em;
+            padding: 0 0.25em;
+            background: ghostwhite;
+        }
+
+    &__title{
+        font-family: 'Aboreto', cursive;
+        margin: 2rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #B08B56;
+    }
+
+    &__search{
+        font-family: 'Montserrat', sans-serif;
+        margin: 2rem auto;
+        width: 80%;
+        align-content: center;
+        border-bottom: 0.2rem solid #B08B56;
+        box-shadow: none;
+        padding: 0.5rem 0rem 0.5rem 2.5rem;
+        background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+        transition: border-bottom 0.2s ease-in-out ;
+    }
+
+    &__search:focus{
+        outline: none;
+        border-bottom: 0.5rem solid #B08B56;
+    }
+
+    &__spells{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+
+        &__spell{
+            border-bottom: solid 0.1rem #B08B56;
+            margin: 0.5rem 0rem;
+            padding: 0.5rem 0rem;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.2s ease-in-out, border-bottom 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+            
+            &-hidden{
+                display: none;
+            }
+        }
+
+        &__spell:hover{
+            background-color: rgba(128, 128, 128, 0.09);
+            border-bottom: solid 0.3rem #B08B56;
+        }
+    }
+
+}
+
+
