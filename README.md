@@ -8,6 +8,8 @@ Mediante el buscador, también se pueden buscar los hechizos por si ya los conoc
 
 🖥️ HTML, CSS/SCSS y JavaScript.
 
+🌐 https://gperez-spellbook.netlify.app/
+
 ---
 
 # [CA] 🧙‍WIZARD'S SPELLBOOK
@@ -20,6 +22,8 @@ Mitjançant al cercador, també es poden buscar els encanteris per si ja els con
 
 🖥️ HTML, CSS/SCSS i JavaScript.
 
+🌐 https://gperez-spellbook.netlify.app/
+
 ---
 
 # [EN] 🧙‍WIZARD'S SPELLBOOK
@@ -31,6 +35,8 @@ Thanks to dnd5eapi.co, a list with all the basics spells is displayed allowing y
 Throught the searcher, you can also search for spells if you already know them.
 
 🖥️ HTML, CSS/SCSS y JavaScript.
+
+🌐 https://gperez-spellbook.netlify.app/
 
 
 ![Wizard's Spellbook](https://user-images.githubusercontent.com/111184947/189225891-4b526691-099d-4869-bc40-f860b5b0cc17.png)
